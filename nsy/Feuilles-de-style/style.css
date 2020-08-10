@@ -1,0 +1,401 @@
+/* Undo some of the default styling 
+
+ul,ol,li,h1,h2,h3,h4,h5,h6,body,html,p,blockquote,div,table,tr,td,form { 
+	font-family: Arial, Helvetica, sans-serif;
+	border-collapse: collapse;
+}
+
+ul.navigation, #inspiration , .left , .square{
+	display: none;
+}
+
+a, a:link, a:visited, a:active { 
+	color: #1a171b; 
+	text-decoration: none; 
+}
+
+td {
+	vertical-align: top;
+	text-align: left;
+	padding-right: 0.5em;
+}
+
+.right{
+	width:100%;
+}
+#container{
+	border:none;
+	width:100%;
+}
+div.col1 , div.col2{
+	width: 100%; 
+	margin: 0;
+	float: none;
+}
+*/
+
+
+
+
+
+
+
+
+
+
+form {
+    width:100%;
+    padding: 30px;
+}
+
+form h1{
+    width: 38%;
+    margin: 0 auto;
+    padding-bottom: 10px;
+}
+
+
+/* Full-width inputs */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+input[type=button] {
+    background-color: gray;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    transition: 0.5s;
+}
+input[type=button]:hover {
+    background-color: #53af57;
+    color: white;
+    transition: 0.5s;
+}
+
+p.white a {
+	color: white;
+	line-height: 100%;
+	font-size: 80%;
+}
+
+
+
+
+
+/* Undo some of the default styling */
+
+:link,:visited { 
+	text-decoration: none; 
+}
+
+ul,ol { 
+	list-style: none;
+}
+
+h1,h2,h3,h4,h5,h6,th,caption { 
+	font-size: 1em; 
+}
+
+ul,ol,li,h1,h2,h3,h4,h5,h6,body,html,p,blockquote,div,table,tr,td,form { 
+	margin: 0px; 
+	padding: 0px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: normal;
+}
+
+img, a img,:link img,:visited img { 
+	border: none;
+}
+
+/* Main divs */
+
+div.centre {
+	width: 880px;
+	margin: 10px auto;
+	text-align: left;
+}
+
+div.top {
+	clear: both;
+	width: 880px;
+	height: 171px;
+}
+
+div.top2 {
+	clear: both;
+	width: 880px;
+	height: 151px;
+}
+
+div.topi {
+	padding: 40px 0px 30px 0px;
+}
+
+div.navigation {
+	float: left;
+	clear: left;
+}
+
+div.newscotlandyard {
+	float: right;
+	width: 159px;
+	clear: right;
+}
+
+div.content {
+	margin: 40px 0px 0px 0px;
+	padding:0 19px;
+}
+
+div.contentc {
+	margin: 40px 0px 0px 0px;
+}
+
+div.left {
+	float: left;
+	width: 185px;
+}
+
+div.lefti {
+	padding: 3px 0px 0px 0px;
+}
+
+div.right {
+	float: left;
+	width: 675px;
+}
+
+div.righti {
+	padding: 0px 0px 0px 0px;
+}
+
+div.col1 {
+	width: 322px;
+	float: left;
+}
+
+div.col2 {
+	width: 322px;
+	float: right;
+}
+
+div.col3 {
+	width: 420px;
+	float: right;
+}
+
+div.contactimages {
+	width: 404px;
+	float: left;
+	margin-top: 3px;
+}
+
+div.square {
+	margin: 0px 10px 10px 0px;
+	float: left;
+}
+
+div.squarei {
+	width: 89px;
+	height: 97px;
+	background-color: #0b0c0d;
+	border: 1px solid #666;
+}
+
+div.inspiration_right {
+	width: 278px;
+	float: left;
+}
+
+div.inspiration_right_i {
+	padding-left: 15px;
+}
+h1{
+	color:#FFFFFF;
+	font-family:arial;
+	font-size:1.7em;
+	font-weight:normal;
+	margin-bottom:27px;
+}
+
+h1 span, h2 span { 
+	display: none;
+}
+
+h2.contact_us {
+	background: transparent url(../images/h_contact_us.gif) top left no-repeat;
+	width: 103px;
+	height: 47px;
+}
+
+h2.inspiration {
+	background: transparent url(../images/h_inspiration.gif) top left no-repeat;
+	width: 103px;
+	height: 47px;
+}
+#inspiration{
+	margin-top:22px;
+	margin-bottom:20px;
+}
+ul.navigation li {
+	float: left;
+	margin-right: 1.25em;
+	color: #9aa9b1;
+}
+
+a, a:link, a:visited, a:active { 
+	color: #9aa9b1; 
+	text-decoration: none; 
+	padding-bottom: 0.2em;
+}
+
+a:hover {  
+	text-decoration: none;
+	border-bottom: 1px solid #4b4b4b; 
+}
+
+ul.navigation li a:hover {
+	/*display: block;*/	
+}
+
+ul.navigation li a, ul.navigation li a:link, ul.navigation li a:visited, ul.navigation li a:active {
+	font-size: 125%;
+}
+
+br.clear {
+	clear: both;
+}
+
+p {
+	font-size: 120%;
+	line-height: 130%;
+	margin-bottom: 30px;
+	color: #9aa9b1;
+}
+
+p.large {
+	line-height: 150%;
+}
+
+p.white, td.white, th.white {
+	color: #fff;
+}
+
+p.heading {
+	font-size: 160%;
+}
+
+p.notice {
+	font-size: 90%;
+}
+
+p.nomargin {
+	margin-bottom: 0px;
+}
+
+p.inspiration_padding {
+	padding: 20px 70px 0px 0px;
+}
+
+td {
+	vertical-align: top;
+	text-align: left;
+	font-size: 120%;
+	line-height: 130%;
+	padding-right: 0.5em;
+	color: #9aa9b1;
+}
+
+img.wb {
+	border: 1px solid #fff;
+}
+
+img.gb {
+	border: 1px solid #4b4b4b;
+	float: left;
+}
+
+.center_img{
+	text-align:center;
+}
+
+/*********************** DP Menu changes ***********************/
+div.top2 {
+	border-bottom:1px solid #3D373F;
+}
+
+div.navigation {
+	padding:40px 0 0 12px;
+}
+
+ul.navigation li {
+	padding:4px 5px;
+}
+
+ul.navigation li.selected {
+	background:none repeat scroll 0 0 #3D373F;
+}
+
+ul.navigation li.selected a {
+	color:#E0EAEF;
+}
+
+ul.navigation li.selected a:hover {  
+	border: none; 
+}
+
+/********************* Updated Styles **************************/
+
+* {
+	padding: 0;
+	margin: 0;
+}
+body {
+	font-family: "lucida sans", verdana, arial, helvetica, sans-serif;
+	font-size: 80%;
+	background:#1A171B;
+}
+html, body {
+	height: 100%;
+}
+#container {
+	min-height: 100%;
+	background-color: #000;
+	border-left: 1px solid #3D373F;
+	border-right: 1px solid #3D373F;
+	width: 898px;
+	margin: 0 auto;
+	color:#fff;
+	text-align:left;
+}
+* html #container {
+	height: 100%;
+}
+
+#footer {
+	width: 898px;
+	clear: both;
+	height: 112px;
+	background-color: #000;
+	color: #DDD;
+	text-align:center;
+	margin: -112px auto 0 auto;
+	position: relative;
+	background:url('../images/nsy_banner.jpg');
+}
+#clearfooter {
+	display: block;
+	height: 112px;
+	clear:both;
+}
+div.top2 {margin:0 auto;}

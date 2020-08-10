@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>DVLA - IdMV</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:16px;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+
+
+#menu-deroulant{
+    padding: 0;
+    margin: 0;
+    margin-left: 10%;
+    list-style: none;
+    width: 180%;
+}
+#menu-deroulant {
+/* on centre le menu dans la page */
+    text-align: center;
+}
+#menu-deroulant li {
+/* on place les liens du menu horizontalement */
+    display: inline-block;
+}
+
+#menu-deroulant li:hover {
+/* on place les liens du menu horizontalement */
+    background-color: #f44436;
+    color: #fff;
+    transition: .3s;
+    border-radius:8px 8px 0 0;
+    border-color: black;
+}
+
+#menu-deroulant a {
+    text-decoration: none;
+    display: block;
+  color:#000;
+}
+
+#menu-deroulant li:first-child{
+border-radius:0 0 8px 8px;
+border-color: black;
+border-width: 5px;
+}
+
+#img01 {
+  opacity: 1
+}
+
+</style>
+<body>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  <div class="w3-container">
+    <img src="Images/homeoffice.png" width="100%" alt="logo"/>
+    <p>In association with</p>
+    <img src="Images/dvla.png" width="100%" alt="logo"/>
+    <h3 class="w3-padding-64" style="margin-top:-20px"><small>Welcome to</small><br><b><u>IdMotorVehicle</u></b></h3>
+  </div>
+  <div class="w3-bar-block" style="margin-top:-30px">
+    <a href="IdMVindexJWatson1265.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a> 
+    <a href="order.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Register</a>
+    <a href="area.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Per area</a> 
+    <a href="date.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Per date</a> 
+    <a href="contact.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Contact</a>
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">&#9776;</a>
+  <span>DVLA</span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+  <!-- Header -->
+  <div class="w3-container" style="margin-top:80px" id="showcase">
+    <h1 class="w3-jumbo"><b>DVLA - IdMotorVehicle</b></h1>
+    <h1 class="w3-xxxlarge w3-text-red"><b>Register</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p>The current system for Great Britain was introduced on 1 September 2001. Each registration index consists of seven characters with a defined format.<br><br><br>
+      From left to right, the characters consist of:<br><br>
+    • A local memory tag, or area code, consisting of two letters which together indicate the local registration office. By December 2013, all local offices had been closed, but the letters still represent a region. The letters I, Q and Z are not used as local office identifiers, though O is still needed for Oxford; Z can be used only as a random letter.<br>
+    The first of these two letters is a mnemonic standing for the name of the broad area where the registration office is located. This is intended to make the registration more memorable than an arbitrary code.[14][15] For example, A is used as the first character in all registrations issued by the three offices located in the vicinity of East Anglia;<br><br>
+    • A two-digit age identifier, which changes twice a year, in March and September. The code is either the last two digits of the year itself if issued between March and August (e.g. "10" for registrations issued between 1 March and 31 August 2010), or else has 50 added to that value if issued between September and February the following year (e.g. "60" for registrations issued between 1 September 2010 and 28 February 2011);<br><br>
+    • A three-letter sequence which uniquely distinguishes each of the vehicles displaying the same initial four-character area and age sequence. The letters I and Q are excluded from the three-letter sequence, as are combinations that may appear offensive (including those in foreign languages). Due to batch allocation of new registration marks to dealers, it is common for cars with "neighbouring" letter sequences to be of the same manufacturer.</p>
+  </div>
+
+
+
+  <div class="w3-row-padding" style="padding-bottom:50px">
+    <div class="w3-half">
+      <ul id="menu-deroulant" class="w3-ul w3-light-grey w3-center">
+        <li class="w3-red w3-xlarge w3-padding-32">Official local mnemonic</li>
+        <li class="w3-padding-16" onclick="onClick(this)">
+          <img class="w3-image" src="Images/anglia.png" style="display: none;" alt="Anglia">
+          <p>Anglia - A</p></li>
+
+        <li class="w3-padding-16" onclick="onClick(this)">
+          <img class="w3-image" src="Images/birmingham.png" style="display: none;" alt="Birmingham">
+          <p>Birmingham - B</p></li>
+
+        <li class="w3-padding-16" onclick="onClick(this)">
+          <img class="w3-image" src="Images/cymru.png" style="display: none;" alt="Cymru">
+          <p>Cymru (Wales) - C</p></li>
+
+        <li class="w3-padding-16" onclick="onClick(this)">
+          <img class="w3-image" src="Images/deeside.png" style="display: none;" alt="Deeside">
+          <p>Deeside - D</p></li>
+
+        <li class="w3-padding-16" onclick="onClick(this)">
+          <img class="w3-image" src="Images/essex.png" style="display: none;" alt="Essex">
+          <p>Essex - E</p></li>
+
+        <li class="w3-padding-16" onclick="onClick(this)">
+          <img class="w3-image" src="Images/forest.png" style="display: none;" alt="Forest and Fens">
+          <p>Forest and Fens - F</p></li>
+
+        <li class="w3-padding-16" onclick="onClick(this)">
+          <img class="w3-image" src="Images/gardens.png" style="display: none;" alt="Garden of Endland">
+          <p>Garden of England - G</p></li>
+
+        <li class="w3-padding-16" onclick="onClick(this)">
+          <img class="w3-image" src="Images/hampshire.png" style="display: none;" alt="Hampshire and Dorset">
+          <p>Hampshire and Dorset - H</p></li>
+
+        <li class="w3-padding-16"><p>No official mnemonic - K</p></li>
+
+        <li class="w3-padding-16" onclick="onClick(this)">
+          <img class="w3-image" src="Images/london.png" style="display: none;" alt="London">
+          <p>London - L</p></li>
+
+        <li class="w3-padding-16" onclick="onClick(this)">
+          <img class="w3-image" src="Images/manchester.png" style="display: none;" alt="Manchester and Merseyside">
+          <p>Manchester and Merseyside - M</p></li>
+
+        <li class="w3-padding-16" onclick="onClick(this)">
+          <img class="w3-image" src="Images/north.png" style="display: none;" alt="North">
+          <p>North - N</p></li>
+
+        <li class="w3-padding-16" onclick="onClick(this)">
+          <img class="w3-image" src="Images/oxford.png" style="display: none;" alt="Oxford">
+          <p>Oxford - O</p></li>
+
+        <li class="w3-padding-16" onclick="onClick(this)">
+          <img class="w3-image" src="Images/preston.png" style="display: none;" alt="Preston">
+          <p>Preston - P</p></li>
+
+        <li class="w3-padding-16" onclick="onClick(this)">
+          <img class="w3-image" src="Images/reading.png" style="display: none;" alt="Reading">
+          <p>Reading - R</p></li>
+
+        <li class="w3-padding-16" onclick="onClick(this)">
+          <img class="w3-image" src="Images/scotland.png" style="display: none;" alt="Scotland">
+          <p>Scotland - S</p></li>
+
+        <li class="w3-padding-16" onclick="onClick(this)">
+          <img class="w3-image" src="Images/severnvalley.png" style="display: none;" alt="Severn Valley">
+          <p>Severn Valley - V</p></li>
+
+        <li class="w3-padding-16" onclick="onClick(this)">
+          <img class="w3-image" src="Images/west.png" style="display: none;" alt="West of England">
+          <p>West of England - W</p></li>
+
+        <li class="w3-padding-16"><p>Personal export - X</p></li>
+
+        <li class="w3-padding-16" onclick="onClick(this)">
+          <img class="w3-image" src="Images/yorkshire.png" style="display: none;" alt="Yorkshire">
+          <p>Yorkshire - Y</p></li>
+      </ul>
+    </div>
+  </div>
+
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xxlarge w3-display-topright">&times;</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image" style="width: 50%">
+      <p id="caption"></p>
+    </div>
+  </div>
+  
+
+<!-- End page content -->
+</div>
+
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  var img = element.firstElementChild;
+  document.getElementById("img01").src = img.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = img.alt;
+}
+</script>
+
+</body>
+</html>

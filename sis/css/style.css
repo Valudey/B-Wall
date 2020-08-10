@@ -1,0 +1,446 @@
+html{
+	height: 100vh;
+}
+
+body{
+	height: 100%;
+	background-image: url("https://wallpaperaccess.com/full/1579818.jpg");
+	color: white;
+    font-family: arial;
+    width: 100%;
+    position: fixed; /* eviter le scroll et fixer la page */
+}
+
+
+/*###################################*/
+/*###############################################################*/
+/*###################################*/
+
+
+header{
+	display: flex;
+    justify-content: flex-start;
+    height: 10%;
+    background-color: white;
+    margin-left: -10px;
+    margin-top: -8px;
+}
+
+header img{
+	height: 85%;
+	margin-left: 10%;
+	margin-top: 5px;
+}
+
+
+/*###################################*/
+/*###############################################################*/
+/*###################################*/
+
+
+.container{
+	background-size: 130%;
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 80%;
+}
+
+
+
+/*###################################*/
+/*###############################################################*/
+/*###################################*/
+
+
+.connection-form{
+	width: 50%;
+	background-color: rgba(255,255,255,0.2);
+	border-radius: 12px;
+    height: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.connection-form #logo-connect{
+	display: block;
+	position: absolute;
+	float: right;
+	right: 28%;
+	margin-top: 2%;
+	width: 10%;
+	
+}
+
+.contain-connect{
+	width: 50%;
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 15%;
+    height: 100%;
+}
+
+.contain-connect form{
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contain-connect form label{
+	margin-bottom: 5px;
+}
+
+.contain-connect form input{
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    border: 0;
+    height: 20px;
+    text-indent: 10px;
+}
+
+
+.contain-connect form input[type="button"] {
+  	width: 50%;
+  	transition: .5s;
+  	margin-left: auto;
+  	margin-right: auto;
+  	text-indent: 0px;
+  	font-weight: bold;
+  }
+
+.contain-connect form input[type="button"]:hover {
+ 	background-color: rgb(37,124,115);
+ 	transition: .5s;
+ 	color: white;
+ 	cursor: pointer;
+ }
+
+
+ /*###################################*/
+
+/* TABLETTES */
+ @media(min-width: 768px) and (max-width: 1024px){
+	.contain-connect{
+	    margin-left: auto;
+	    margin-right: auto;
+	}
+
+	.connection-form #logo-connect{
+		display: none;
+	}
+
+	.contain-connect form{
+	    margin-left: auto;
+	    margin-right: auto;
+	}
+
+	.contain-connect form input[type="button"]{
+ 		background-color: rgb(37,124,115);
+ 		color: white;
+ 		height: 40px;
+ 	}
+}
+
+
+/*###################################*/
+
+/* MOBILE (PORTRAIT) */
+@media(min-width: 320px) and (max-width: 480px){
+	.contain-connect{
+		width: 90%;
+	    margin-left: auto;
+	    margin-right: auto;
+	}
+
+	.contain-connect form{
+		width: 100%;
+	}
+
+	.connection-form #logo-connect{
+		display: none;
+	}
+
+	.contain-connect form h1{
+		font-size: 15px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.contain-connect form label{
+		font-size: 10px;
+		margin-bottom: 1px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.contain-connect form input{
+		width: 80%;
+		height: 10%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.contain-connect form input[type="button"]{
+		background-color: rgb(37,124,115);
+ 		color: white;
+ 		width: 80%;
+ 		height: 100%;
+ 		font-size: 10px;
+ 	}
+}
+
+
+/*###################################*/
+
+/* MOBILE (PAYSAGE) */
+@media (min-width: 481px) and (max-width: 767px) {
+  
+  	.contain-connect{
+		width: 90%;
+	    margin-left: auto;
+	    margin-right: auto;
+	}
+
+	.contain-connect form{
+		width: 100%;
+	}
+
+	.connection-form #logo-connect{
+		display: none;
+	}
+
+	.contain-connect form h1{
+		font-size: 15px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 3px;
+	}
+
+	.contain-connect form label{
+		font-size: 10px;
+		margin-bottom: 1px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.contain-connect form input{
+		width: 80%;
+		height: 10%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.contain-connect form input[type="button"]{
+		background-color: rgb(37,124,115);
+ 		color: white;
+ 		width: 80%;
+ 		height: 100%;
+ 		font-size: 10px;
+ 	} 
+}
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+	.connection-form #logo-connect{
+		display: block;
+	}
+}
+
+
+
+
+
+/*###################################*/
+/*###############################################################*/
+/*###################################*/
+
+
+
+#error-connection{
+	width: 100%;
+	display: flex;
+    justify-content: space-around;
+    height: 30%;
+    margin-top: 4%;
+}
+
+#error-connection img{
+ 	height: 60%;
+ 	margin-left: 3%;
+ 	float: left;
+}
+
+#error-connection p{
+ 	width: 60%;
+ 	font-size: 1em;
+ 	margin-left: 10px;
+ 	float: left;
+}
+
+
+/*###################################*/
+
+/* TABLETTES */
+@media(min-width: 768px) and (max-width: 1024px){
+	#error-connection{
+    	width: 100%;
+    	height: 30%;
+    	font-size: 13px;
+    	display: flex;
+    	flex-direction: column;
+    	justify-content: center;
+    	margin-right: auto;
+    	margin-left: auto;
+	}
+
+	#error-connection img{
+ 		height: 50%;
+ 		float: none;
+ 		display: block;
+ 		margin-left: auto;
+ 		margin-right: auto;
+ 	}
+
+ 	#error-connection p{
+ 		width: 100%;
+ 		float: none;
+ 		display: block;
+ 		margin-top: 5%;
+ 		margin-left: auto;
+ 		margin-right: auto;
+ 		text-align: center;
+ 	}
+}
+
+
+/*###################################*/
+
+/* MOBILE (PORTRAIT) */
+@media(min-width: 320px) and (max-width: 480px){
+ 	#error-connection{
+    	width: 100%;
+    	height: 30%;
+    	font-size: 12px;
+    	display: flex;
+    	flex-direction: column;
+    	justify-content: center;
+    	margin-right: auto;
+    	margin-left: auto;
+	}
+
+	#error-connection img{
+ 		height: 30%;
+ 		float: none;
+ 		display: block;
+ 		margin-left: auto;
+ 		margin-right: auto;
+ 	}
+
+ 	#error-connection p{
+ 		width: 100%;
+ 		float: none;
+ 		display: block;
+ 		margin-top: 5%;
+ 		margin-left: auto;
+ 		margin-right: auto;
+ 		text-align: center;
+ 	}
+}
+
+
+/*###################################*/
+
+/* MOBILE (PAYSAGE) */
+@media (min-width: 481px) and (max-width: 767px) {
+  
+  #error-connection{
+    	width: 100%;
+    	height: 20%;
+    	font-size: 12px;
+    	margin-right: auto;
+    	margin-left: auto;
+    	margin-top: 0;
+	}
+
+	#error-connection img{
+ 		height: 90%;
+ 		display: block;
+ 		float: left;
+ 		margin-left: 5%;
+ 	}
+
+ 	#error-connection p{
+ 		width: 80%;
+ 		display: block;
+ 		float: right;
+ 		margin-top: 3%;
+ 		margin-right: -2%;
+ 	}
+  
+}
+
+
+/*###################################*/
+/*###############################################################*/
+/*###################################*/
+
+footer{
+ 	height: 10%;
+ 	background-color: white;
+ 	margin-left: -10px;
+}
+
+footer .footer-p{
+	float: left;
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+	margin-left: 3%;
+}
+
+footer img{
+	height: 75%;
+	float: right;
+	margin-right: 5%;
+	margin-top: .8%;
+}
+
+footer a{
+	text-decoration: none;
+	color: grey;
+	transition: .5s;
+}
+
+footer a:hover{
+	color: rgb(37,124,115);
+	transition: .5s;
+}
+
+
+/*###################################*/
+
+/* MOBILE (PORTRAIT) */
+@media(min-width: 320px) and (max-width: 480px){
+	footer .footer-p{
+		font-size: 12px;
+	}
+}
+
+/* MOBILE (PAYSAGE) */
+@media (min-width: 481px) and (max-width: 767px) {
+	footer .footer-p{
+		font-size: 9px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,82 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>New Scotland Yard - e-Office</title>
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+<link rel="shortcut icon" href="images/nsy.ico" type="image/x-icon" /> 
+<meta name="language" content="en" />
+<meta name="keywords" content="New Scotland Yard, Met Police" />
+<meta name="description" content="New Scotland Yard - Brand Story" />
+<meta name="copyright" content="Metropolitan Police Service 2009" />
+<link rel="stylesheet" type="text/css" href="Feuilles-de-style/style.css" media="print" />
+<script type="text/javascript" src="includes/swfobject.js"></script>
+
+<style type="text/css" media="screen">
+@import "Feuilles-de-style/style.css";
+</style>
+
+</head>
+<body>
+<div id="container">
+	<div class="top2">
+	<div class="topi">
+		<div class="navigation">
+			<ul class="navigation">
+				<li class=""><a href="home.html">Home</a></li>
+				<li class=""><a href="brand-story.html">Our Story</a></li>
+				<li class=""><a href="IdMV.html">IdMV</a></li>
+				<li class=""><a href="contact-us.html">Contact us</a></li>
+				<li class="selected"><a href="e-office.html">e-Office</a></li>
+			</ul>
+		</div>
+		<div class="newscotlandyard" id="nsy">
+			<h1><img src="images/nsylogo.gif" width="159" height="101" alt="New Scotland Yard" /></h1>
+		</div>
+	</div>
+</div>
+
+<!--  This makes the logo animated using the flash logo
+		<script type="text/javascript">
+		var so = new SWFObject("nsy.swf", "nsy", "159", "101", "8", "#1a171b");
+		so.write("nsy");
+		</script> -->	
+	<div class="content">
+		<div class="left">
+			<div class="lefti"><img src="images/nsy2.jpg" width="135" height="145" alt="New Scotland Yard" class="wb" /></div>
+		</div>
+		<div class="right">
+			<div class="righti">
+				<div class="col1">
+  		
+					<form name="connexion" action="" method="POST">
+				
+                		<h1>Connection</h1>
+                
+                		<label><b>User Code</b></label>
+                		<input type="text" placeholder="Enter the user code" id="username" required>
+
+                		<label><b>Password</b></label>
+                		<input type="password" placeholder="Enter the password" id="password" required>
+
+                		<input type="button" value="LOGIN" onclick="checkPassword()" />
+                	
+            		</form>
+            		
+            		
+            		
+           		</div>
+			</div>
+		</div>
+	</div>
+	
+	<script>
+		function checkPassword() {
+			location.href = "accessdenied.html";
+		}
+</script>
+	
+	<div id="clearfooter"></div>
+	</div>
+<div id="footer"></div>
+</body>
+</html>

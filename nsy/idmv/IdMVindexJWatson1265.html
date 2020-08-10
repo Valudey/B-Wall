@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>DVLA - IdMV</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:16px;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+</style>
+<body>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  <div class="w3-container">
+    <img src="Images/homeoffice.png" width="100%" alt="logo"/>
+    <p>In association with</p>
+    <img src="Images/dvla.png" width="100%" alt="logo"/>
+    <h3 class="w3-padding-64" style="margin-top:-20px"><small>Welcome to</small><br><b><u>IdMotorVehicle</u></b></h3>
+  </div>
+  <div class="w3-bar-block" style="margin-top:-30px">
+    <a href="IdMVindexJWatson1265.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a> 
+    <a href="order.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Register</a>
+    <a href="area.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Per area</a> 
+    <a href="date.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Per date</a> 
+    <a href="contact.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Contact</a>
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">&#9776;</a>
+  <span>DVLA</span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+  <!-- Header -->
+  <div class="w3-container" style="margin-top:80px" id="showcase">
+    <h1 class="w3-jumbo"><b>DVLA - IdMotorVehicle</b></h1>
+    <h1 class="w3-xxxlarge w3-text-red"><b>Who are we?</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+  </div>
+
+
+  <!-- Services -->
+  <div class="w3-container" id="services" style="margin-top:25px">
+    <p>The Driver and Vehicle Licensing Agency (DVLA) is the organisation of the UK government responsible for maintaining a database of drivers in Great Britain and a database of vehicles for the entire United Kingdom. Its counterpart for drivers in Northern Ireland is the Driver and Vehicle Agency (DVA). The agency issues driving licences, organises collection of vehicle excise duty (also known as road tax and road fund licence) and sells personalised registrations.</p>
+    <p>The DVLA is an executive agency of the Department for Transport (DfT).</p>
+  </div>
+  
+  <!-- Photo grid (modal) -->
+  <div class="w3-row-padding">
+    <div class="w3-half">
+      <img src="Images/dvla1.jpg" style="width:100%" onclick="onClick(this)" alt="DVLA email addresses are changing">
+      <img src="Images/dvla2.jpg" style="width:100%" onclick="onClick(this)" alt="Driver and Vehicle Licensing Agency">
+    </div>
+
+    <div class="w3-half">
+      <img src="Images/dvla3.jpg" style="width:100%" onclick="onClick(this)" alt="DVLA announces Share Driving Licence 'U-turn'">
+      <img src="Images/dvla4.png" style="width:100%" onclick="onClick(this)" alt="Keep your DVLA documents & reference numbers safe">
+    </div>
+  </div>
+
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xxlarge w3-display-topright">&times;</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+
+  
+  
+  <!-- Designers -->
+  <div class="w3-container" id="designers" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>History</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p>Originally, vehicle registration was the responsibility of Borough and County councils throughout Great Britain, a system created by the Motor Car Act 1903. The licensing system was centralised in 1965 and administered from the Driver and Vehicle Licensing Centre (DVLC) in Swansea. In 1990, the DVLC was renamed as the Driver and Vehicle Licensing Agency (DVLA), becoming an executive agency of Department for Transport.</p>
+    <p><b>Diplomatic and consular vehicles</b> :<br>Official diplomatic and consular vehicles are registered with the DVLA on behalf of the Foreign and Commonwealth Office.</p>
+  </div>
+
+  <!-- Packages / Pricing Tables -->
+  <div class="w3-container" id="packages" style="margin-top:75px;padding-bottom:50px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>DVLA Database</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p>The vehicle register held by DVLA is used in many ways. For example, by the DVLA itself to identify untaxed vehicles, and by outside agencies to identify keepers of cars entering central London who have not paid the congestion charge, or who exceed speed limits on a road that has speed cameras by matching the cars to their keepers utilising the DVLA database. The current DVLA vehicle register was built by EDS under a £5 million contract signed in 1996, with a planned implementation date on October 1998, though actual implementation was delayed by a year. It uses a client–server architecture and uses the vehicle identification number, rather than the registration plate, as the primary key to track vehicles, eliminating the possibility of having multiple registrations for a single vehicle.</p>
+  	<p>The Vehicle Identity Check (VIC) was introduced to help reduce vehicle crime. It is intended to deter criminals from disguising stolen cars with the identity of written off or scrapped vehicles however this scheme was later scrapped in October 2014.</p>
+  	<p>When an insurance company writes off a car, the registration document (V5 logbook) is surrendered to them and destroyed. The insurance company will then notify the DVLA that the vehicle has been written off. This notification will set a "VIC marker" on the vehicle record on the DVLA database.</p>
+  	<p>DVLA database records are used by commercial vehicle check companies to offer a comprehensive individual car check to prospective purchasers.</p>
+  	<p>However, the accuracy of the data held remains a continuing problem. Anyone can request information from the database if they purport to have just cause to need it, for a fee of £2.50.</p>
+  	<p>The database of drivers, developed in the late 1980s, holds details of some 42 million driving licence holders in the UK. It is used to produce driving licences and to assist bodies such as the Driving Standards Agency, police and courts in the enforcement of legislation concerning driving entitlements and road safety.</p>
+  </div>
+
+<!-- End page content -->
+</div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
+
+</body>
+</html>

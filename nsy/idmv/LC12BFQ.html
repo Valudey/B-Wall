@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>DVLA - IdMV</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:16px;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+
+
+#menu-deroulant{
+    padding: 0;
+    margin: 0;
+    margin-left: 10%;
+    list-style: none;
+    width: 180%;
+}
+#menu-deroulant {
+/* on centre le menu dans la page */
+    text-align: center;
+    border-radius:20px 20px 8px 8px;
+}
+
+#menu-deroulant a {
+    text-decoration: none;
+    display: block;
+  color:#000;
+}
+
+#menu-deroulant img {
+    opacity: 1;
+}
+
+#menu-deroulant #id {
+    margin-top: -300px;
+    margin-left: 60%;
+    width: 30%;
+}
+
+#menu-deroulant p{
+  text-align: left;
+  padding-left: 10%;
+  width: 100%;
+}
+
+#menu-deroulant #person{
+  text-align: left;
+  padding-left: 10%;
+  width: 60%;
+}
+
+
+</style>
+<body>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  <div class="w3-container">
+    <img src="Images/homeoffice.png" width="100%" alt="logo"/>
+    <p>In association with</p>
+    <img src="Images/dvla.png" width="100%" alt="logo"/>
+    <h3 class="w3-padding-64" style="margin-top:-20px"><small>Welcome to</small><br><b><u>IdMotorVehicle</u></b></h3>
+  </div>
+  <div class="w3-bar-block" style="margin-top:-30px">
+    <a href="IdMVindexJWatson1265.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a> 
+    <a href="order.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Register</a>
+    <a href="area.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Per area</a> 
+    <a href="date.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Per date</a> 
+    <a href="contact.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Contact</a>
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">&#9776;</a>
+  <span>DVLA</span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+  <!-- Header -->
+  <div class="w3-container" style="margin-top:80px" id="showcase">
+    <h1 class="w3-jumbo"><b>DVLA - IdMotorVehicle</b></h1>
+    <h1 class="w3-xxxlarge w3-text-red"><b>LC12 BFQ</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p>LC12 BFQ's registration informations :</p>
+  </div>
+
+  <div class="w3-container" id="services" style="margin-top:25px; margin-bottom: 5%;">
+    <p><b>This registration is controled by the Interior Security.</b><br>To access this registration, please, contact our intern services by following this link:</p>
+    <a href="https://www.gov.uk/contact-the-dvla">https://www.gov.uk/contact-the-dvla</a>
+  </div>
+
+  
+
+  <div class="w3-row-padding" style="padding-bottom:50px">
+    <div class="w3-half">
+      <ul id="menu-deroulant" class="w3-ul w3-light-grey w3-center">
+        <li class="w3-red w3-xlarge w3-padding-32">OWNER REGISTRATION</li>
+        <li class="w3-padding-16"><p><b>Lastname :</b> N/A</p>
+          <p id="person"><b>Firstname :</b> N/A</p>
+          <p id="person"><b>Birth date :</b> N/A</p>
+          <p id="person"><b>Living place :</b> N/A</p>
+          <p id="person"><b>Registration date :</b> N/A</p>
+          <p id="person"><b>Registration place :</b> N/A</p>
+          <img id="id" src="Images/contact.bmp" width="20%" alt="contact"/></li>
+
+        <li class="w3-red w3-xlarge w3-padding-32">REGISTERED VEHICLE</li>
+
+        <li class="w3-padding-16">
+          <p><b>Model :</b> Cherokee</p>
+          <p><b>Manufacturer :</b> Jeep</p>
+          <img src="Images/jeep.png" width="80%" alt="hyundai"/>
+          <p><b>Registration date :</b> N/A</p>
+          <p><b>Production :</b> 2014–present</p>
+          <p><b>Class :</b> SUV</p>
+          <p><b>Body style :</b> 5-door estate</p>
+          <p><b>Layout :</b> Front-engine, front-wheel-drive</p>
+          <p><b>Color :</b> Black</p>
+          <p><b>Engine :</b> 2.4L Tigershark I4 – 87 PS (138 kW; 184 hp) - 232 N⋅m (171 lbf⋅ft) (gasoline)</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+  
+  
+
+<!-- End page content -->
+</div>
+
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
+
+</body>
+</html>

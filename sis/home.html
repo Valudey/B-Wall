@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>SIS</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="css/styl.css">
+<!--[if lt IE 9]>
+<script src="../assets/js/html5shiv.min.js"></script>
+<script src="../assets/js/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body>
+
+    <div w3-include-html="header.html"></div>
+    <script>w3.includeHTML();</script>
+
+    <p>Bonjour <?php echo $_GET['user']; ?> !</p>
+
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+    <script src="/lib/w3.js"></script>
+    <div w3-include-html="menu.html"></div>
+    <script>w3.includeHTML();</script>
+
+    <h1>Ma page web</h1>
+    <p>Aujourd'hui nous sommes le .</p>
+
+    <form method="post" action="fiche.html">
+		<p>
+			<input type="text" name="prenom" />
+    		<textarea name="message" placeholder="Votre message ici" rows="8" cols="45"></textarea>
+			<select name="choix">
+    			<option value="choix1" selected="selected">Choix 1</option>
+    			<option value="choix2">Choix 2</option>
+    			<option value="choix3">Choix 3</option>
+    			<option value="choix4">Choix 4</option>
+			</select>
+			<input type="checkbox" name="case" id="case" /> <label for="case">Ma case à cocher</label>
+			Aimez-vous les frites ?
+			<input type="radio" name="frites" value="oui" id="oui" checked="checked" /> <label for="oui">Oui</label>
+			<input type="radio" name="frites" value="non" id="non" /> <label for="non">Non</label>
+			<input type="hidden" name="pseudo" value="Mateo21" />
+			Formulaire d'envoi de fichier :<br />
+            <input type="file" name="monfichier" /><br />
+            <input type="submit" value="Valider" />
+		</p>
+	</form>
+
+    <script>
+        var family = {
+            self: 'Sébastien',
+            sister: 'Laurence',
+        };
+        var myArray = ['Sébastien', 'Laurence'];
+        
+    </script>
+    
+
+    <div w3-include-html="footer.html"></div>
+    <script>w3.includeHTML();</script>
+</body>
+</html>

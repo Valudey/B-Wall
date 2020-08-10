@@ -1,0 +1,6 @@
+ Sherlock = {
+ 	start:function(){
+ 		
+ 	}
+ }
+  

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>LGDR</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="assets/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="assets/css/animate.css">
+<link rel="stylesheet" type="text/css" href="assets/css/font.css">
+<link rel="stylesheet" type="text/css" href="assets/css/li-scroller.css">
+<link rel="stylesheet" type="text/css" href="assets/css/slick.css">
+<link rel="stylesheet" type="text/css" href="assets/css/jquery.fancybox.css">
+<link rel="stylesheet" type="text/css" href="assets/css/theme.css">
+<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+<!--[if lt IE 9]>
+<script src="../assets/js/html5shiv.min.js"></script>
+<script src="../assets/js/respond.min.js"></script>
+<![endif]-->
+</head>
+<body>
+<div id="preloader">
+  <div id="status">&nbsp;</div>
+</div>
+<a class="scrollToTop" href="#"><i class="fa fa-angle-up"></i></a>
+
+
+
+  
+<script src="https://www.w3schools.com/lib/w3.js"></script>
+<script src="/lib/w3.js"></script>
+<div w3-include-html="header.html"></div>
+<script>w3.includeHTML();</script>
+
+<div class="container">
+
+  <section id="contentSection">
+    <div class="row">
+      <div class="col-lg-8 col-md-8 col-sm-8">
+        <div class="left_content">
+          <div class="single_page">
+            <ol class="breadcrumb">
+              <li><a href="index.html">Home</a></li>
+              <li class="active">Newsroom</li>
+            </ol>
+
+            <h1>NEWSROOM</h1>
+
+            <div class="post_commentbox"></div>
+
+            <div class="single_page_content">
+
+              <form method="post" action="">
+                <select name="choix">
+                  <option value="choix1" selected="selected">Rédaction d'article</option>
+                  <option value="choix2">Création de personnages</option>
+                  <option value="choix3">Autres demandes</option>
+                </select>
+
+                <div id="redac" style="display: block;">
+                    <br><blockquote>Remplissez le formulaire pour créer votre article.</blockquote>
+
+                    <p>Combien de sous-section voulez-vous intégrer dans la section "Faits" ?</p>
+
+                    <br><select name="choix">
+                      <option value="choix1" selected="selected">1</option>
+                      <option value="choix2">2</option>
+                      <option value="choix3">3</option>
+                    </select>
+
+                    <p>Titre :</p>
+                    <input type="text" name="Titre" placeholder="Titre d'article" />
+
+                    <p>Sous-section n°1 :</p>
+                    <input type="text" name="Titre" placeholder="Titre de sous-section n°1"/>
+                    <br><textarea name="message" placeholder="Décrivez les faits" rows="8" cols="45"></textarea>
+
+                    <p>Sous-section n°2 :</p>
+                    <input type="text" name="Titre" placeholder="Titre de sous-section n°2" />
+                    <br><br><textarea name="message" placeholder="Décrivez les faits" rows="8" cols="45"></textarea>
+
+                    <p>Sous-section n°3 :</p>
+                    <input type="text" name="Titre" placeholder="Titre de sous-section n°3" />
+                    <br><textarea name="message" placeholder="Décrivez les faits" rows="8" cols="45"></textarea>
+                </div>
+
+
+
+
+                <div id="perso" style="display: none;">
+                  <br><blockquote>Remplissez le formulaire pour créer votre personnage.</blockquote>
+
+                  <h3>Informations générales</h3>
+
+                  <p>Nom & Prénom :</p>
+                  <input type="text" name="Prénom" placeholder="Prénom" />
+                  <input type="text" name="Nom" placeholder="Nom" />
+
+                  <p>Âge :</p>
+                  <input type="text" name="Âge" placeholder="Âge" />
+
+                  <p>Nationalité & Occupation :</p>
+                  <input type="text" name="Nationalité" placeholder="Nationalité" />
+                  <input type="text" name="Occupation" placeholder="Occupation/Métier" />
+
+
+
+                  <h3>Autorisations</h3>
+
+                  <p>Autorisation d'endormir ou d'assommer 💤 :</p>
+                  <input type="radio" name="assommer" value="oui" id="oui" checked="checked" /> <label for="oui">Oui</label> 
+                  <input type="radio" name="assommer" value="non" id="non" /> <label for="non">Non</label>
+
+                  <p>Autorisation de blesser ⚠️ :</p>
+                  <input type="radio" name="blesser" value="oui" id="oui" checked="checked" /> <label for="oui">Oui</label>
+                  <input type="radio" name="blesser" value="non" id="non" /> <label for="non">Non</label>
+
+                  <p>Autorisation de démembrer 🦵 :</p>
+                  <input type="radio" name="demembrer" value="oui" id="oui" checked="checked" /> <label for="oui">Oui</label>
+                  <input type="radio" name="demembrer" value="non" id="non" /> <label for="non">Non</label>
+
+                  <p>Autorisation de tuer 🚫 :</p>
+                  <input type="radio" name="tuer" value="oui" id="oui" checked="checked" /> <label for="oui">Oui</label>
+                  <input type="radio" name="tuer" value="non" id="non" /> <label for="non">Non</label>
+
+
+
+                  <h3>Autres informations</h3>
+
+                  <p>Apparence :</p>
+                  <textarea name="message" placeholder="Décrivez l'apparence de votre personnage'" rows="8" cols="45"></textarea>
+
+                  <p>Caractère :</p>
+                  <textarea name="message" placeholder="Décrivez son caractère" rows="8" cols="45"></textarea>
+
+                  <p>Histoire :</p>
+                  <textarea name="message" placeholder="Décrivez son histoire" rows="8" cols="45"></textarea>
+
+                  <p>Informations complémentaires :</p>
+                  <textarea name="message" placeholder="Quelque chose d'autre à ajouter ?" rows="8" cols="45"></textarea>
+
+                </div>
+
+
+
+
+
+                <div id="autres" style="display: none;">
+
+                  <br><blockquote>Une demande particulière ? C'est ici !</blockquote>
+
+                  <input type="text" name="Objet" placeholder="Objet de la demande" />
+                  <br><textarea name="message" placeholder="Décrivez votre demande" rows="8" cols="45"></textarea>
+                </div>
+              </form>
+
+              
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-lg-4 col-md-4 col-sm-4">
+        <aside class="right_content">
+          <div w3-include-html="side1.html"></div>
+          <script>w3.includeHTML();</script>
+
+          <div w3-include-html="side2.html"></div>
+          <script>w3.includeHTML();</script>
+
+        </aside>
+      </div>
+    </div>
+  </section>
+</div>
+
+
+<div w3-include-html="footer.html"></div>
+<script>w3.includeHTML();</script>
+
+<script src="assets/js/jquery.min.js"></script> 
+<script src="assets/js/wow.min.js"></script> 
+<script src="assets/js/bootstrap.min.js"></script> 
+<script src="assets/js/slick.min.js"></script> 
+<script src="assets/js/jquery.li-scroller.1.0.js"></script> 
+<script src="assets/js/jquery.newsTicker.min.js"></script> 
+<script src="assets/js/jquery.fancybox.pack.js"></script> 
+<script src="assets/js/custom.js"></script>
+</body>
+</html>

@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>DVLA - IdMV</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:16px;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+
+#menu-demo2, #menu-demo2 ul{
+padding:0;
+margin:0;
+list-style:none;
+text-align:center;
+}
+#menu-demo2 li{
+/*display:inline-block;*/
+position:relative;
+}
+
+#menu-demo2 li:first-child{
+border-radius:8px 8px 0 0;
+}
+
+#menu-demo2 ul li{
+display:inherit;
+border-radius:0;
+}
+#menu-demo2 ul li:hover{
+border-radius:0;
+}
+#menu-demo2 ul li:last-child{
+border-radius:0 0 8px 8px;
+}
+#menu-demo2 ul{
+position:absolute;
+z-index: 1000;
+max-height:0;
+left: 0;
+right: 0;
+overflow:hidden;
+-moz-transition: .8s all .3s;
+-webkit-transition: .8s all .3s;
+transition: .8s all .3s;
+}
+#menu-demo2 li:hover ul{
+max-height:100em;
+}
+
+/* background des liens sous menus */
+#menu-demo2 li li{
+background:#2A2333;
+}
+
+#menu-demo2 li:hover{
+background:#f44436;
+}
+
+#menu-demo2 li li:hover{
+background:#99bdda;
+}
+
+
+#menu-demo2 #present:hover{
+background:#F6AD1A;
+}
+
+
+/* les a href */
+#menu-demo2 a{
+text-decoration:none;
+display:block;
+padding:8px 32px;
+color:#000;
+font-family:arial;
+}
+#menu-demo2 ul a{
+padding:8px 0;
+}
+#menu-demo2 li:hover li a{
+color:#fff;
+text-transform:inherit;
+}
+#menu-demo2 li:hover a{
+color:#fff;
+}
+
+#menu-demo2 li li:hover a{
+color:#000;
+}
+
+#menu-demo2 li li a{
+color:#fff;
+text-transform:inherit;
+}
+
+</style>
+<body>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  <div class="w3-container">
+    <img src="Images/homeoffice.png" width="100%" alt="logo"/>
+    <p>In association with</p>
+    <img src="Images/dvla.png" width="100%" alt="logo"/>
+    <h3 class="w3-padding-64" style="margin-top:-20px"><small>Welcome to</small><br><b><u>IdMotorVehicle</u></b></h3>
+  </div>
+  <div class="w3-bar-block" style="margin-top:-30px">
+    <a href="IdMVindexJWatson1265.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a> 
+    <a href="order.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Register</a>
+    <a href="area.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Per area</a> 
+    <a href="date.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Per date</a> 
+    <a href="contact.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Contact</a>
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">&#9776;</a>
+  <span>DVLA</span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+  <!-- Header -->
+  <div class="w3-container" style="margin-top:80px" id="showcase">
+    <h1 class="w3-jumbo"><b>DVLA - IdMotorVehicle</b></h1>
+    <h1 class="w3-xxxlarge w3-text-red"><b>Per area</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p>Registrations based on areas :</p>
+  </div>
+
+  <div class="w3-row-padding" style="padding-bottom:50px">
+    <div class="w3-half">
+      <ul id="menu-demo2" class="w3-ul w3-light-grey w3-center">
+        <li class="w3-red w3-xlarge w3-padding-32">Areas</li>
+        <li class="w3-padding-16"><a href="">Anglia</a>
+          <ul>
+            <li><a href="#">AS78 UAJ</a></li>
+            <li><a href="#">AH64 JPN</a></li>
+            <li><a href="#">AG04 LZC</a></li>
+            <li><a href="#">AR55 IGU</a></li>
+            <li><a href="#">AV53 CBO</a></li>
+            <li><a href="#">AA17 HKE</a></li>
+            <li><a href="#">AB77 YGC</a></li>
+            <li><a href="#">AM00 LRZ</a></li>
+            <li><a href="#">AK05 XFX</a></li>
+            <li><a href="#">AP74 SAD</a></li>
+            <li><a href="#">AJ94 GXB</a></li>
+            <li><a href="#">AL09 INX</a></li>
+            <li><a href="#">AS79 QSV</a></li>
+            <li><a href="#">AL85 EOD</a></li>
+            <li><a href="#">AF11 EQN</a></li>
+            <li><a href="#">AV12 FEZ</a></li>
+            <li><a href="#">See all</a></li>
+          </ul>
+        </li>
+
+        <li class="w3-padding-16"><a href="">Birmingham</a>
+          <ul>
+            <li><a href="#">BU45 URA</a></li>
+            <li><a href="#">BR07 GZF</a></li>
+            <li><a href="#">BF10 LIW</a></li>
+            <li id="present"><a href="BT20MCO.html">BT20 MCO</a></li>
+            <li><a href="#">BN68 YOO</a></li>
+            <li><a href="#">BW01 JLO</a></li>
+            <li><a href="#">BG14 IMO</a></li>
+            <li><a href="#">BJ41 VIK</a></li>
+            <li><a href="#">BX43 QXM</a></li>
+            <li><a href="#">BO09 ATO</a></li>
+            <li><a href="#">BB06 QBE</a></li>
+            <li id="present"><a href="BW88TJP.html">BW88 TJP</a></li>
+            <li><a href="#">BS76 JEV</a></li>
+            <li><a href="#">BD43 WST</a></li>
+            <li><a href="#">BM77 OZM</a></li>
+            <li><a href="#">BS20 CHB</a></li>
+            <li><a href="#">See all</a></li>
+          </ul>
+        </li>
+
+        <li class="w3-padding-16"><a href="">Cymru (Wales)</a>
+          <ul>
+            <li><a href="#">CB69 XAC</a></li>
+            <li><a href="#">CE00 OGV</a></li>
+            <li><a href="#">CC41 XHC</a></li>
+            <li><a href="#">CL91 UYK</a></li>
+            <li><a href="#">CR03 DOZ</a></li>
+            <li><a href="#">CA43 HSC</a></li>
+            <li><a href="#">CH05 RNP</a></li>
+            <li><a href="#">CO68 QDB</a></li>
+            <li><a href="#">CR97 PVK</a></li>
+            <li><a href="#">CB09 PGJ</a></li>
+            <li><a href="#">CA20 MKA</a></li>
+            <li><a href="#">CV16 KZJ</a></li>
+            <li><a href="#">CP18 ORC</a></li>
+            <li><a href="#">CU92 FNG</a></li>
+            <li><a href="#">CT54 VRQ</a></li>
+            <li><a href="#">CD11 QFL</a></li>
+            <li><a href="#">See all</a></li>
+          </ul>
+        </li>
+
+        <li class="w3-padding-16"><a href="">Deeside</a>
+          <ul>
+            <li><a href="#">DX14 JIV</a></li>
+            <li><a href="#">DN15 YOV</a></li>
+            <li><a href="#">DJ12 FPI</a></li>
+            <li><a href="#">DM00 LJV</a></li>
+            <li><a href="#">DL13 AYH</a></li>
+            <li><a href="#">DF83 VLS</a></li>
+            <li><a href="#">DN73 WZN</a></li>
+            <li><a href="#">DF51 WSJ</a></li>
+            <li><a href="#">DB87 HOD</a></li>
+            <li><a href="#">DG53 BFQ</a></li>
+            <li><a href="#">DX00 CWT</a></li>
+            <li><a href="#">DD81 DEO</a></li>
+            <li><a href="#">DN53 TLB</a></li>
+            <li><a href="#">DG14 HMO</a></li>
+            <li><a href="#">DI08 BPJ</a></li>
+            <li><a href="#">DM64 SBD</a></li>
+            <li><a href="#">See all</a></li>
+          </ul>
+        </li>
+
+        <li class="w3-padding-16"><a href="">Essex</a>
+          <ul>
+            <li><a href="#">ET37 GVK</a></li>
+            <li><a href="#">EH61 XFE</a></li>
+            <li><a href="#">ES59 CCR</a></li>
+            <li><a href="#">EL03 DJX</a></li>
+            <li><a href="#">EJ18 KOQ</a></li>
+            <li><a href="#">EN05 OHL</a></li>
+            <li><a href="#">EN73 OVI</a></li>
+            <li><a href="#">EE65 EEZ</a></li>
+            <li><a href="#">EN15 PTL</a></li>
+            <li id="present"><a href="EP92FQE.html">EP92 FQE</a></li>
+            <li><a href="#">EU94 FJO</a></li>
+            <li><a href="#">EY36 KFA</a></li>
+            <li><a href="#">EV02 HJZ</a></li>
+            <li><a href="#">EK99 HZE</a></li>
+            <li><a href="#">EO12 LBC</a></li>
+            <li><a href="#">ES16 DIK</a></li>
+            <li><a href="#">See all</a></li>
+          </ul>
+        </li>
+
+        <li class="w3-padding-16"><a href="">Forest and Fens</a>
+          <ul>
+            <li><a href="#">FL89 AEU</a></li>
+            <li><a href="#">FK94 KIP</a></li>
+            <li><a href="#">FC09 EKL</a></li>
+            <li><a href="#">FC89 QYO</a></li>
+            <li><a href="#">FK14 QCM</a></li>
+            <li><a href="#">FB54 VSO</a></li>
+            <li><a href="#">FX50 ADD</a></li>
+            <li><a href="#">FG82 YEI</a></li>
+            <li><a href="#">FR85 HMZ</a></li>
+            <li><a href="#">FT07 SEW</a></li>
+            <li><a href="#">FG70 PPA</a></li>
+            <li><a href="#">FP88 HNL</a></li>
+            <li><a href="#">FJ45 ZWH</a></li>
+            <li><a href="#">FV60 OAK</a></li>
+            <li><a href="#">FJ11 JSD</a></li>
+            <li><a href="#">FO10 DQI</a></li>
+            <li><a href="#">See all</a></li>
+          </ul>
+        </li>
+
+        <li class="w3-padding-16"><a href="">Garden of England</a>
+          <ul>
+            <li><a href="#">GP39 RYC</a></li>
+            <li><a href="#">GL43 AVH</a></li>
+            <li><a href="#">GR06 QNL</a></li>
+            <li><a href="#">GM58 CLN</a></li>
+            <li><a href="#">GM50 ZYG</a></li>
+            <li><a href="#">GB20 VSN</a></li>
+            <li><a href="#">GO19 FSR</a></li>
+            <li><a href="#">GC11 ZWC</a></li>
+            <li><a href="#">GW16 STU</a></li>
+            <li><a href="#">GS00 DSK</a></li>
+            <li><a href="#">GV09 ZUS</a></li>
+            <li><a href="#">GD15 IUR</a></li>
+            <li><a href="#">GP12 LMS</a></li>
+            <li><a href="#">GA60 OQI</a></li>
+            <li><a href="#">GY06 WLP</a></li>
+            <li><a href="#">GH50 WUT</a></li>
+            <li><a href="#">See all</a></li>
+          </ul>
+        </li>
+
+        <li class="w3-padding-16"><a href="">Hampshire and Dorset</a>
+          <ul>
+            <li><a href="#">HA70 KDT</a></li>
+            <li><a href="#">HK01 WSK</a></li>
+            <li><a href="#">HA05 CPT</a></li>
+            <li><a href="#">HY56 PXS</a></li>
+            <li><a href="#">HT02 AOB</a></li>
+            <li><a href="#">HF84 OIF</a></li>
+            <li><a href="#">HP94 MDP</a></li>
+            <li><a href="#">HD14 VDQ</a></li>
+            <li><a href="#">HM64 KND</a></li>
+            <li><a href="#">HL98 BHJ</a></li>
+            <li><a href="#">HF42 MSF</a></li>
+            <li><a href="#">HG48 KON</a></li>
+            <li><a href="#">HU63 SIE</a></li>
+            <li><a href="#">HC78 ENU</a></li>
+            <li><a href="#">HM15 IUC</a></li>
+            <li><a href="#">HE00 PRS</a></li>
+            <li><a href="#">See all</a></li>
+          </ul>
+        </li>
+
+        <li class="w3-padding-16"><a href="">London</a>
+          <ul>
+            <li><a href="#">LY38 XOJ</a></li>
+            <li id="present"><a href="LC04IHC.html">LC04 IHC</a></li>
+            <li><a href="#">LJ18 TWH</a></li>
+            <li><a href="#">LV10 TZR</a></li>
+            <li><a href="#">LT04 TJB</a></li>
+            <li id="present"><a href="LC89AGF.html">LC89 AGF</a></li>
+            <li><a href="#">LP18 HVG</a></li>
+            <li><a href="#">LE68 MKD</a></li>
+            <li><a href="#">LD80 MSJ</a></li>
+            <li><a href="#">LT05 ZVV</a></li>
+            <li><a href="#">LF08 RVJ</a></li>
+            <li id="present"><a href="LR10MGN.html">LR10 MGN</a></li>
+            <li><a href="#">LH20 JPI</a></li>
+            <li><a href="#">LA05 HIA</a></li>
+            <li id="present"><a href="LC12BFQ.html">LC12 BFQ</a></li>
+            <li id="present"><a href="LG12TBE.html">LG12 TBE</a></li>
+            <li><a href="#">See all</a></li>
+          </ul>
+        </li>
+
+        <li class="w3-padding-16"><a href="">Manchester and Merseyside</a>
+          <ul>
+            <li><a href="#">MB99 SNC</a></li>
+            <li><a href="#">MM86 WMH</a></li>
+            <li><a href="#">MA01 VWY</a></li>
+            <li><a href="#">MT89 HVD</a></li>
+            <li><a href="#">MO55 RIN</a></li>
+            <li><a href="#">MK17 NPQ</a></li>
+            <li><a href="#">MH13 XDJ</a></li>
+            <li><a href="#">MP06 SPS</a></li>
+            <li><a href="#">MP17 IEO</a></li>
+            <li><a href="#">MV91 XLP</a></li>
+            <li><a href="#">ML00 QSD</a></li>
+            <li><a href="#">ML71 GQM</a></li>
+            <li><a href="#">MV02 ZDB</a></li>
+            <li><a href="#">MG70 IKT</a></li>
+            <li><a href="#">MW11 XBK</a></li>
+            <li><a href="#">MC10 ZCP</a></li>
+            <li><a href="#">See all</a></li>
+          </ul>
+        </li>
+
+        <li class="w3-padding-16"><a href="">North</a>
+          <ul>
+            <li><a href="#">NC09 RUU</a></li>
+            <li><a href="#">NB83 HVZ</a></li>
+            <li><a href="#">NF31 DCA</a></li>
+            <li><a href="#">NH51 CEX</a></li>
+            <li><a href="#">NU09 RCS</a></li>
+            <li><a href="#">NP14 VWK</a></li>
+            <li><a href="#">NM06 GNZ</a></li>
+            <li><a href="#">NO19 VLV</a></li>
+            <li><a href="#">NF07 CKF</a></li>
+            <li><a href="#">NL04 MUY</a></li>
+            <li><a href="#">NN13 JCQ</a></li>
+            <li><a href="#">NM81 GFQ</a></li>
+            <li><a href="#">NX65 DLW</a></li>
+            <li><a href="#">NK90 YRJ</a></li>
+            <li><a href="#">NV15 QAI</a></li>
+            <li><a href="#">NR49 HRW</a></li>
+            <li><a href="#">See all</a></li>
+          </ul>
+        </li>
+
+		    <li class="w3-padding-16"><a href="">Oxford</a>
+          <ul>
+            <li><a href="#">OW67 VOE</a></li>
+            <li><a href="#">OC59 SKN</a></li>
+            <li><a href="#">OA34 GUK</a></li>
+            <li><a href="#">OS07 KII</a></li>
+            <li><a href="#">OR50 QNY</a></li>
+            <li><a href="#">OW05 JDX</a></li>
+            <li><a href="#">OD15 FHW</a></li>
+            <li><a href="#">ON88 XSH</a></li>
+            <li><a href="#">OH03 KIA</a></li>
+            <li><a href="#">OX12 DUG</a></li>
+            <li><a href="#">OE78 BTF</a></li>
+            <li><a href="#">OA36 TGD</a></li>
+            <li><a href="#">OH12 PRR</a></li>
+            <li><a href="#">OM94 VFO</a></li>
+            <li><a href="#">OX11 CIM</a></li>
+            <li><a href="#">OY00 NPO</a></li>
+            <li><a href="#">See all</a></li>
+          </ul>
+        </li>
+
+		    <li class="w3-padding-16"><a href="">Preston</a>
+          <ul>
+            <li><a href="#">PC36 MFH</a></li>
+            <li><a href="#">PJ94 UWJ</a></li>
+            <li><a href="#">PX08 RQF</a></li>
+            <li><a href="#">PG05 RFH</a></li>
+            <li><a href="#">PS66 LTW</a></li>
+            <li><a href="#">PX59 EQM</a></li>
+            <li><a href="#">PC86 FHP</a></li>
+            <li><a href="#">PV73 MUW</a></li>
+            <li><a href="#">PU01 FKE</a></li>
+            <li><a href="#">PP02 JPC</a></li>
+            <li><a href="#">PL07 QQY</a></li>
+            <li><a href="#">PA90 UNN</a></li>
+            <li><a href="#">PV06 SZU</a></li>
+            <li><a href="#">PN17 RKM</a></li>
+            <li><a href="#">PP07 DQJ</a></li>
+            <li><a href="#">PN01 ITL</a></li>
+            <li><a href="#">See all</a></li>
+          </ul>
+        </li>
+
+		    <li class="w3-padding-16"><a href="">Reading</a>
+          <ul>
+            <li><a href="#">RW74 XVQ</a></li>
+            <li><a href="#">RV61 VJD</a></li>
+            <li><a href="#">RG55 ETW</a></li>
+            <li><a href="#">RC11 OSJ</a></li>
+            <li><a href="#">RS08 WFU</a></li>
+            <li><a href="#">RW00 LNI</a></li>
+            <li><a href="#">RM89 SHM</a></li>
+            <li><a href="#">RS20 VHQ</a></li>
+            <li><a href="#">RT64 LBK</a></li>
+            <li><a href="#">RA41 SFV</a></li>
+            <li><a href="#">RS82 OJV</a></li>
+            <li><a href="#">RO07 KYM</a></li>
+            <li><a href="#">RP09 XRB</a></li>
+            <li><a href="#">RK71 TKB</a></li>
+            <li><a href="#">RC52 WJE</a></li>
+            <li><a href="#">RB83 OQP</a></li>
+            <li><a href="#">See all</a></li>
+          </ul>
+        </li>
+
+		    <li class="w3-padding-16"><a href="">Scotland</a>
+          <ul>
+            <li><a href="#">SX92 NGT</a></li>
+            <li><a href="#">SY08 NWE</a></li>
+            <li><a href="#">SU53 EBU</a></li>
+            <li><a href="#">SE38 POA</a></li>
+            <li><a href="#">SL06 RRB</a></li>
+            <li><a href="#">SE01 LRZ</a></li>
+            <li><a href="#">SW50 JGJ</a></li>
+            <li><a href="#">SL99 CWK</a></li>
+            <li><a href="#">SA13 BNF</a></li>
+            <li><a href="#">SR52 VSV</a></li>
+            <li><a href="#">SK96 OJV</a></li>
+            <li><a href="#">SR12 FPG</a></li>
+            <li><a href="#">SY89 HCZ</a></li>
+            <li><a href="#">SE99 ICD</a></li>
+            <li><a href="#">SY06 FDB</a></li>
+            <li><a href="#">SD20 PQN</a></li>
+            <li><a href="#">See all</a></li>
+          </ul>
+        </li>
+
+		    <li class="w3-padding-16"><a href="">Severn Valley</a>
+          <ul>
+            <li><a href="#">VR12 DBS</a></li>
+            <li><a href="#">VX00 ZRZ</a></li>
+            <li><a href="#">VD16 DLQ</a></li>
+            <li><a href="#">VE17 NZS</a></li>
+            <li><a href="#">VM11 TJA</a></li>
+            <li><a href="#">VV02 DIG</a></li>
+            <li><a href="#">VA18 HKO</a></li>
+            <li><a href="#">VB15 IVM</a></li>
+            <li><a href="#">VJ05 LEU</a></li>
+            <li><a href="#">VG79 NXD</a></li>
+            <li><a href="#">VE01 MOK</a></li>
+            <li><a href="#">VK90 MGE</a></li>
+            <li><a href="#">VV96 CXC</a></li>
+            <li><a href="#">VE88 YLY</a></li>
+            <li><a href="#">VD11 KPS</a></li>
+            <li><a href="#">VC65 MCE</a></li>
+            <li><a href="#">See all</a></li>
+          </ul>
+        </li>
+
+		    <li class="w3-padding-16"><a href="">West of England</a>
+          <ul>
+            <li><a href="#">WU13 WGH</a></li>
+            <li><a href="#">WN15 BAN</a></li>
+            <li><a href="#">WC79 JXZ</a></li>
+            <li><a href="#">WL20 CWP</a></li>
+            <li><a href="#">WS12 LAN</a></li>
+            <li><a href="#">WB67 XZS</a></li>
+            <li><a href="#">WK94 CPK</a></li>
+            <li><a href="#">WD39 NSK</a></li>
+            <li><a href="#">WB01 CUS</a></li>
+            <li><a href="#">WE15 VPL</a></li>
+            <li><a href="#">WY05 YJM</a></li>
+            <li><a href="#">WR16 IGK</a></li>
+            <li><a href="#">WA71 UUC</a></li>
+            <li><a href="#">WB16 ZMK</a></li>
+            <li><a href="#">WF05 PWM</a></li>
+            <li><a href="#">WU01 ROT</a></li>
+            <li><a href="#">See all</a></li>
+          </ul>
+        </li>
+
+		    <li class="w3-padding-16"><a href="">Yorkshire</a>
+          <ul>
+            <li><a href="#">YU80 XSM</a></li>
+            <li><a href="#">YF58 VDK</a></li>
+            <li><a href="#">YP19 FCX</a></li>
+            <li><a href="#">YY57 NML</a></li>
+            <li><a href="#">YD02 JGP</a></li>
+            <li><a href="#">YX31 QAE</a></li>
+            <li><a href="#">YA08 ZGJ</a></li>
+            <li><a href="#">YP02 CKJ</a></li>
+            <li><a href="#">YD20 JZA</a></li>
+            <li><a href="#">YU06 OGE</a></li>
+            <li><a href="#">YK09 EEK</a></li>
+            <li><a href="#">YW14 WFF</a></li>
+            <li><a href="#">YX80 KDX</a></li>
+            <li><a href="#">YN98 LNO</a></li>
+            <li><a href="#">YV01 SGO</a></li>
+            <li><a href="#">YK12 HGH</a></li>
+            <li><a href="#">See all</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+<!-- End page content -->
+</div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
+
+</body>
+</html>

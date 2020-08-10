@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>SIS</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<!--[if lt IE 9]>
+<script src="../assets/js/html5shiv.min.js"></script>
+<script src="../assets/js/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body>
+
+	<header>
+		<img src="images/mi6.png" alt="logo"/>
+	</header>
+
+	<div class="container">
+		<div class="connection-form">
+			<img id="logo-connect" src="images/mi6-2.png" alt="logo"/>
+			<div class="contain-connect">
+				<form name="connexion" action="" method="POST">
+
+					<h1>Connection</h1>
+
+					<label><b>User Code</b></label>
+					<input type="text" placeholder="" id="username" required>
+
+					<label><b>Password</b></label>
+					<input type="password" placeholder="" id="password" required>
+
+					<input type="button" value="LOGIN" onclick="checkPassword()" />
+				
+				</form>
+
+				<div id="error-connection" style="display: none">
+					<img src="images/access-denied.png" alt="access-denied"/>
+					<p>Wrong user code or password. Try again.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script> 
+
+		function checkPassword() {
+
+			if (document.getElementById('username').value == 'colibri' && document.getElementById('password').value =='azerty') {
+				alert('Correct Authentification');
+				location.href = "idmv/IdMVindexJWatson1265.html";
+			} else {
+				if (document.getElementById('username').value == 'gauffre' && document.getElementById('password').value =='qwerty') {
+					alert('Correct Authentification');
+					location.href = "idmv/IdMVindexJWatson1265.html";
+				} else {
+					var sol = document.getElementById("error-connection");
+					sol.style.display = 'block';
+					document.getElementById("password").value = "";
+					location.href = "home.html";
+				}
+			}
+		}
+	</script>
+
+	<footer>
+		<div class="footer-p">
+			<p style="color: rgb(37,124,115)">Copyright &copy; 2020<br><a href="index.html"><b>Secret Intelligence Service</b></a></p>
+		</div>
+		<img src="images/mi6-2.png" alt="logo"/>
+
+	</footer>
+
+
+
+</body>
+</html>
